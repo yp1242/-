@@ -181,7 +181,7 @@ class node:
     #在移动棋子这个函数中，x为只有两个元素的list。
     #x[0]表示当前棋子的移动方向，x[1]表示当前棋子的chess_type。
     def move_chess_piece(self,x):
-        #遍历棋盘中的棋子，尝试移动每一个chess_type为x[1]的可移动的棋子。
+        #遍历棋盘中的棋子，找到name为x[1]的棋子
         for i in self.curr_status:
             if i.name != x[1]:
                 continue
