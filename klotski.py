@@ -284,6 +284,7 @@ boards_list.append(root.board)
 que.append(root)
 
 
+#开始广度优先搜索的循环部分
 while True: #如果要为搜索设定搜索次数上限，改变这里的循环条件即可
     if(len(que)<=0):
         print("No Solution found")
